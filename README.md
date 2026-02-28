@@ -14,10 +14,6 @@ Procedural Metadata Mapping: Relationships between elements are captured as meta
 
 On-Demand Computation + N(0) Lookup: Calculations are performed only when needed; once computed, results are stored for instant retrieval in a “zero-cost” lookup system.
 
-Special Note on Seed Glyphs
-
-All recursive fractal seeds used in this framework have been tested as glyphs with a complexity of 256^256^3, demonstrating that even extremely large information spaces can be encoded efficiently and deterministically.
-
 Level 2: Intermediate Conceptual Overview (For Technically-Inclined Readers)
 How It Works
 
@@ -41,10 +37,6 @@ This removes the need to store vast raw datasets explicitly.
 
 Compression & Scaling
 
-Lossless compression of initial datasets has been tested with ~1GB datasets achieving ~300x compression.
-
-Larger datasets scale proportionally; for example, 10GB can achieve ~3000x compression.
-
 All compression is lossless and deterministic, preserving every bit of original information.
 
 Level 3: Technical Overview (For Researchers / Developers)
@@ -52,7 +44,7 @@ Core Components
 
 Seed Glyphs
 
-Fundamental unit of information, capable of representing 256^256^3 states.
+Fundamental unit of information.
 
 Recursively foldable to represent extremely large, high-dimensional datasets.
 
